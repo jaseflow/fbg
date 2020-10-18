@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1,
 h2,
 h3,
-p {
+p,
+figure {
   margin-bottom: 30px;
 }
 
@@ -17,6 +22,10 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   background: #f9f9f9;
+}
+
+.intro {
+  font-size: 20px;
 }
 
 .header {
