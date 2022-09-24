@@ -202,7 +202,6 @@ label {
 @media(max-width: 999px) {
   .working {
     margin: 50px 0;
-    max-width: none;
     object-fit: cover;
     max-height: 300px;
   }
