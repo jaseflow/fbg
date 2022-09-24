@@ -9,47 +9,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <header class="header">
-      <div class="header__cover">
-        <img src="logo.svg" alt="" class="header__logo">
-        <img src="avatar.jpg" alt="" class="header__img">
-        <div class="header__bg"></div>
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
+    <div class="container home">
       <!-- modify this form HTML and place wherever you want your form -->
 
-      <h1 class="title">Contact</h1>
-      <form id="my-form"
-        action="https://formspree.io/f/mwkwoebk"
-        method="POST"
-        class="form"
-        >
-        <div class="form__group">
-          <label for="name">Your name</label>
-          <input id="name" class="input" type="text" name="name" />
-        </div>
-        <div class="form__group">
-          <label for="email">Your email</label>
-          <input id="email" class="input" type="email" name="email" />
-        </div>
-        <div class="form__group">
-          <label for="message">Your message</label>
-          <textarea id="message" name="message" class="input input--textarea">
-          </textarea>
-        </div>
-        <button id="my-form-button" class="btn">Submit</button>
-        <p id="my-form-status"></p>
-      </form>
+      <img src="working.jpg" alt="" class="working">
+      <a href="/"><img src="mbg-logo.svg" alt="" class="header__logo"></a>
+      <div>
+        <h1 class="title">Contact</h1>
+        <form id="my-form"
+          action="https://formspree.io/f/mwkwoebk"
+          method="POST"
+          class="form"
+          >
+          <div class="form__group">
+            <label for="name">Your name</label>
+            <input id="name" class="input" type="text" name="name" />
+          </div>
+          <div class="form__group">
+            <label for="email">Your email</label>
+            <input id="email" class="input" type="email" name="email" />
+          </div>
+          <div class="form__group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" class="input input--textarea">
+            </textarea>
+          </div>
+          <button id="my-form-button" class="btn">Submit</button>
+          <p id="my-form-status"></p>
+        </form>
 
-      <!-- Place this script at the end of the body tag -->
+        <!-- Place this script at the end of the body tag -->
+
+        <footer class="footer">
+          <p class="flat"><small class="footer__copy">
+            © Copyright Makeup by Gizella 2018-2022
+          </small></p>
+        </footer>
+      </div>
 
       <script>
         window.addEventListener("DOMContentLoaded", function() {
@@ -98,11 +94,5 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
       </script>
-      <footer class="footer">
-        <small class="footer__copy">
-          © Copyright Makeup by Gizella 2018-2020
-        </small>
-      </footer>
-    </div>
   </body>
 </html>
