@@ -203,6 +203,8 @@ label {
   .working {
     margin: 50px -40px;
     max-width: none;
+    object-fit: cover;
+    max-height: 600px;
   }
 }
 
